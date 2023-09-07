@@ -1,0 +1,18 @@
+.resizedTextbox {
+    width: 79%;
+    /* margin-left: 43%; */
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.header {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+}
