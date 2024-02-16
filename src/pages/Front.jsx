@@ -2,31 +2,49 @@ import React from 'react';
 import Navbar from '../partial/navbar';
 import Footer from '../partial/footer';
 import '../Style/front.css';
-import banners from '../Images/banner.jpg';
-import Category from '../component/Category';
-import Product from './Product';
+import Store from './Store';
 
+import banners from '../Images/banner.jpg';
 const Front = () => {
 
     return (
         <>
             <Navbar />
-
-            <div className='container1'>
+            {/* <div>
+                    <img className='img-fluid banner' src={banners} alt='BannerImage' />
+                </div> */}
+            <Store />
+            {/* <div className='container1'>
                 <div>
                     <img className='img-fluid banner' src={banners} alt='BannerImage' />
                 </div>
 
-                <div className='d-flex flex-row'>
-                    <div className='d-flex flex-wrap' style={{ marginLeft: '10px', zIndex: '0' }}>
+                <div className='d-flex mb-4'>
+                    <div className='d-flex flex-wrap align-self-stretch' >
                         <Category />
                     </div>
-                    <div className='d-flex justify-content-around flex-wrap '>
-                        {/* Product cards */}
+                    <div className='d-flex flex-wrap  align-self-stretch'>
                         <Product />
-                    </div>
-                </div>
-            </div>
+                        {/* <div className="d-flex flex-column col-lg-16 col-md-12 col-sm-8 bd-highlight mb-3">
+                            <div className="d-flex align-content-stretch flex-wrap">
+                            </div>
+                        </div> */}
+                        {/* <div className="row">
+                            <div className="col-sm-11 col-md-4 col-lg-3">
+                                <Product />
+                            </div>
+                        </div> */}
+                    {/* </div> */}
+                    {/* <div className='d-flex flex-wrap justify-content-around'>
+                        <div className="d-flex flex-column bd-highlight mb-3">
+                            
+                                        <Product />
+                                    
+                            </div>
+                        </div>
+                    </div> */}
+                {/* </div>
+            </div> */} 
             <Footer />
         </>
     );

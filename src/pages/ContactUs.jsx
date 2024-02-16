@@ -17,7 +17,7 @@ const ContactUs = () => {
             <div className='container1'>
                 <h1>Contact Us</h1>
                 <p>If you have any questions, feedback, or would like to collaborate with us, please fill out the form below.</p>
-                <section className="vh-100">
+                <section className="">
                     <div className="container py-5 h-100">
                         <div className="row d-flex align-items-center justify-content-center h-100">
                             <div className="col-md-8 col-lg-7 col-xl-6">

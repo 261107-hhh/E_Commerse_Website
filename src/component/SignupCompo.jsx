@@ -9,7 +9,7 @@ const SignupCompo = () => {
 
     const navigator = useNavigate();
 
-    const [otp, setOtp] = useState('')
+    // const [otp, setOtp] = useState('')
 
     const [user, setUser] = useState({
         name: '',
@@ -23,20 +23,20 @@ const SignupCompo = () => {
         setUser({ ...user, [fieldName]: event.target.value.trim() })
     }
 
-    const handelVerify = (e) => {
-        console.log(otp)
-        e.preventDefault();
-        if (otp.length < 4) {
-            toast.error("Incorrect Otp")
-        }
-        else {
-            // signUpUser(otp).then((result) => {
-            //     navigator("/login")
-            // }).catch((err) => {
-            //     toast.warn("error: " + err)
-            // });
-        }
-    }
+    // const handelVerify = (e) => {
+    //     console.log(otp)
+    //     e.preventDefault();
+    //     if (otp.length < 4) {
+    //         toast.error("Incorrect Otp")
+    //     }
+    //     else {
+    //         // signUpUser(otp).then((result) => {
+    //         //     navigator("/login")
+    //         // }).catch((err) => {
+    //         //     toast.warn("error: " + err)
+    //         // });
+    //     }
+    // }
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -61,9 +61,9 @@ const SignupCompo = () => {
         else {
 
             registerUser(user).then((result) => {
-                toast.success("Success: User Registered")
+                toast.success("Success: Verify otp")
                 console.log(result);
-                navigator("/login")
+                navigator("/verify")
             }).catch((err) => {
                 console.log(err);
                 if (err.message === "Network Error") {
@@ -79,40 +79,12 @@ const SignupCompo = () => {
 
     }
 
-
-    //Submit the Form
-    // createUser(user).then((data) => {
-    //   console.log(data);
-    //   //alert("User Register");
-    //   toast.success("User Registered successfully")
-    //   navigate("/login")
-
-    // }).catch(error => {
-    //   if (error.response.status === 400) {
-    //     toast.error("vaildation Eroor")
-    //     // alert("vaild Error");
-    //     var message = ``
-    //     for (let i in error.response.data) {
-    //       //  print error in console console.log(error.response.data[i])
-    //       message = message + `${i.toUpperCase()} ${error.response.data[i]} \n`
-    //     }
-    //     message = message + "";
-    //     toast.error(message);
-    //   } else {
-    //     toast.error("Server Error")
-    //     //alert("server Error");
-    //   }
-    //   console.log(error)
-    // })
-
-
-
-
     return (
         <>
             <div className="container1">
                 <h1>Register</h1>
-                <section className="vh-100">
+                <section className="">
+                {/* vh-100 */}
                     <div className="container py-5 h-100">
                         <div className="row d-flex align-items-center justify-content-center h-100">
                             <div className="col-md-8 col-lg-7 col-xl-6">
@@ -157,8 +129,8 @@ const SignupCompo = () => {
                         </div>
                     </div>
                 </section>
-                <button type="button" className="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
             </div>
+            {/* <button type="button" className="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
 
             <div className="modal fade bd-example-modal-lg" tabIndex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                 <div className="modal-dialog modal-lg">
@@ -194,7 +166,7 @@ const SignupCompo = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </>
     )
 }

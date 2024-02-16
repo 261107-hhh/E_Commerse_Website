@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
   width: 100%;
   min-height: 100vh;
@@ -6,6 +6,11 @@
 
 .container1{
   margin-top: 56px;
+}
+
+.notfound{
+  height: 55vh;
+  padding-top: 20%;
 }
 
 /* .App-logo {
@@ -42,3 +47,4 @@
     transform: rotate(360deg);
   }
 } */
+

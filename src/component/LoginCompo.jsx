@@ -60,7 +60,8 @@ const LoginCompo = () => {
         <>
             <div className='container1'>
                 <h1>Login</h1>
-                <section className="vh-100">
+                <section className="">
+                {/* vh-100 */}
                     <div className="container py-5 h-100">
                         <div className="row d-flex align-items-center justify-Content-center h-100">
                             <div className="col-md-8 col-lg-7 col-xl-6">
@@ -86,7 +87,7 @@ const LoginCompo = () => {
                                     </div>
                                     <hr />
                                     <div className="d-flex justify-content-around align-items-center mb-4">
-                                        <a href="#!">Forgot password?</a>
+                                        <a href="forgetPassword">Forgot password?</a>
                                     </div>
 
                                     {/* <!-- Submit button --> */}

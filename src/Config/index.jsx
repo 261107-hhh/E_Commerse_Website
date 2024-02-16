@@ -13,9 +13,14 @@ export const checkLogin = () => {
     if (ob.token && ob.user) {
       return true;
     }
+    else {
+      return false;
+    }
+  }
+  else {
+    return false;
   }
 
-  return false;
 };
 
 // get token
@@ -40,10 +45,22 @@ export const getCurrentUser = () => {
 
 
 export const isAdmin = () => {
+  console.log("Check admin");
+  let user = getCurrentUser();
+  if (user) {
+    let isAdmin = false;
+    if ((user.role[0].id) === 1111) {
+      isAdmin = true;
+    }
+    return isAdmin;
+
+  }
+  else return false;
   // let user = getCurrentUser();
   // let flag = user.roles.find(r => r.id === 5245)
   // return flag ? true : false;
-  return false;
+  // return true;
+  // return false;
 }
 
 // Logout

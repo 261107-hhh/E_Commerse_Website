@@ -15,7 +15,7 @@ const Footer = () => {
                     <div className="container py-4">
                         <div className="row gy-4 gx-5">
                             <div className="col-lg-5 col-md-6">
-                                <h5 className="h1 text-white">Sumit</h5>
+                                <h5 className="h1 text-white">Kumaun E-Commerce</h5>
                                 <p className="small text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
                                 <p className="small text-muted mb-0">&copy; Copyrights. All rights reserved. <a className="text-primary" href="#ASD">sumit.com</a></p>
                             </div>
@@ -24,9 +24,6 @@ const Footer = () => {
                                 <ul className="list-unstyled text-muted">
                                     <li><Link to="/"><HomeIcon className='icon' style={{ "fontSize": "28px" }} /></Link></li>
                                     <li><Link to="/aboutus"><InfoIcon className='icon' style={{ "fontSize": "28px" }} /></Link></li>
-
-                                    {/* <li><Link to="/" target='_blank'>Home</Link></li>
-                                    <li><Link to="/AboutUs" target='_blank'>About</Link></li> */}
 
                                 </ul>
                             </div>
@@ -39,9 +36,6 @@ const Footer = () => {
                                     <li>
                                         <Link to="https://wa.me/6397499593" target='_blank'><WhatsAppIcon className='icon' style={{ "fontSize": "28px" }} /></Link>
                                     </li>
-
-                                    {/* <li><Link to="https://www.instagram.com/confidential_06/" target='_blank'>Instagram</Link></li>
-                                    <li><Link to="https://wa.me/6397499593" target='_blank'>Whatsapp</Link></li> */}
                                 </ul>
                             </div>
                             {/* <div class="col-lg-4 col-md-6">

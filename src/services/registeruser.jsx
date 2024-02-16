@@ -42,7 +42,27 @@ export const login = (data) => {
     // return "h"
 }
 
+export const verify = (data) => {   
+    return axios.get(`${BASE_URL}/register/verify/`+ data).then(res => res.data)
+    // return axios.post(`${BASE_URL}/users/`,data).then(response=>response.data)
+    // return "h"
+}
 
+export const getOtp = (data) => {
+    return axios.get(`${BASE_URL}/register/request/newotp/`+ data).then(res => res.data)
+    // return axios.post(`${BASE_URL}/users/`,data).then(response=>response.data)
+    // return "h"
+}
+
+export const setNewPassword = (data) => {
+    return axios.post(`${BASE_URL}/register/request/newpassword`, data).then(res => res.data)
+
+}
+
+export const getCurrentUser = () => {
+    return axios.post(`${BASE_URL}/user/current`).then(res => res.data)
+
+}
 // export const generateToken=(loginData)=>{
 //     return axios.post(`${BASE_URL}/auth/login`,loginData).then((response)=>response.data)
 // }
