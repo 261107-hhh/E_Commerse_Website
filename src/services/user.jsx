@@ -31,8 +31,6 @@ export const logout = () => {
 
 }
 
-
-
 export const getAllUser = () => {
     return PrivateHttp.get(`/user/getAll`).then(res => res.data)
 }
@@ -40,6 +38,12 @@ export const getAllUser = () => {
 export const getUser = (id) => {
     console.log(id+" id of user");
     return PrivateHttp.get(`/user/get/${id}`).then(res => res.data)
+}
+
+export const updateUser = (id, user) => {
+    console.log(id+" id of user");
+    console.log(JSON.stringify(user)+": "+id);
+    return PrivateHttp.put(`/user/update/${id}`, user).then(res => res.data)
 }
 
 // export const deleteUser=(userId)=>{
